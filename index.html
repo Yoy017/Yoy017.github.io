@@ -1,111 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AVosLivres</title>
-  <link rel="stylesheet" href="./css/styles.css">
-  <title>AVosLivres</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chantal Lachat</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <nav>
-      <p>Jane Doe</p>
-      <ul>
-        <li><a href="#author">A propos</a></li>
-        <li><a href="#books">Livres</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <nav>
+            <p>Chantal Lachat</p>
+            <ul>
+                <li><a href="#about">A propos</a></li>
+                <li><a href="#smct-book">Livres</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main>
-    <canvas id="starsCanvas"></canvas>
-    <div class="about">
-      <!-- Section Auteur -->
-      <section class="author">
-        <h1 class="title">Jane Doe</h1>
-        <div class="img">
-          <img src="./img/pp.jpg" alt="Jane Doe">
-        </div>
-        <div class="text-container">
-          <p class="typing-text">
-            Bonsoir, je suis <strong>Jane</strong>, une <strong>passionnée de lecture</strong> devenue
-            <strong>écrivaine</strong>. J'ai décidé de partager avec vous mes <a href="#">écrits</a> et mes
-            <a href="#">lectures</a>. J'espère que vous prendrez autant de plaisir à lire
-            <a href="#books">mes livres</a> que j'en ai eu à les écrire.
-          </p>
-        </div>
-      </section>
+    <main class="scroll-container">
+        <canvas id="starsCanvas"></canvas>
 
-      <!-- <section id="down">
-        <img src="./img/down-arrow.png" alt="down-arrow">
-      </section> -->
-    </div>
-
-    <!-- Section Livres -->
-    <!-- TODO: CHANGE EACH HTML COMPONENT INTO ONE SECTION FOR BETTER HANDLING -->
-    <section class="showcase">
-      <section class="smct">
-        <div class="book-title">
-          <h1 class="title">Sois moche et cache-toi !</h1>
-          <div class="underline"></div>
-        </div>
-        <div class="book-container">
-          <div class="book-wrapper">
-            <div class="book">
-              <div class="book-side book-cover">
-                <img src="./img/smct.jpg" alt="Sois moche et cache-toi">
-              </div>
-              <div class="book-side book-spine"></div>
-              <div class="book-side book-back"></div>
+        <section class="about section" id="about">
+            <!-- Section Auteur -->
+            <div class="author">
+                <h2 class="title">Chantal Lachat</h2>
+                <div class="img">
+                    <img src="./img/chantal.jpg" alt="Chantal Lachat">
+                </div>
+                <div class="text-container">
+                    <p class="typing-text">
+                        Bonsoir, je suis <strong>Chantal</strong>, une <strong>passionnée de lecture</strong> devenue
+                        <strong>écrivaine</strong>. J'ai décidé de partager avec vous mes <a href="#books">ouvrages</a>. J'espère que vous prendrez autant de plaisir à lire
+                        <a href="#smct-book">mes livres</a> que j'en ai eu à les écrire.
+                    </p>
+                </div>
             </div>
-          </div>
-          <div class="book-details">
-            <div class="tag">Témoignage poignant</div>
-            <p class="description">
-              Un récit bouleversant qui expose les réalités du harcèlement scolaire et moral, vécu
-              pendant l'enfance et l'adolescence. Une histoire vraie qui nous rappelle l'importance de la résilience
-              et du combat contre l'intimidation.
-            </p>
-          </div>
-        </div>
-      </section>
-    </section>
+        </section>
 
-    <section class="showcase">
-      <section class="adn">
-        <div class="book-title">
-          <h1 class="title">Le test ADN: Ancêtres et damnation</h1>
-          <div class="underline"></div>
-        </div>
-        <div class="book-container">
-          <div class="book-wrapper">
-            <div class="book">
-              <div class="book-side book-cover">
-                <img src="./img/test_adn.jpg" alt="Sois moche et cache-toi">
-              </div>
-              <div class="book-side book-spine"></div>
-              <div class="book-side book-back"></div>
+        <!-- Section Livres -->
+        <section class="showcase section" id="smct-book">
+            <div class="smct">
+                <div class="book-title">
+                    <h1 class="title">Sois moche et cache-toi !</h1>
+                    <div class="underline"></div>
+                </div>
+                <div class="book-container">
+                    <div class="book-wrapper">
+                        <a href="https://www.amazon.fr/Sois-moche-cache-toi-harc%C3%A8lement-ladolescence-ebook/dp/B09DX7619T/ref=sr_1_1?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&sr=8-1">
+                            <div class="book">
+                                <div class="book-side book-cover">
+                                    <img src="./img/smct.jpg" alt="Sois moche et cache-toi">
+                                </div>
+                                <div class="book-side book-spine"></div>
+                                <div class="book-side book-back"></div>
+                            </div>
+                    </div>
+                    </a>
+                    <div class="book-details">
+                        <div class="tag">Témoignage poignant</div>
+                        <p class="description">
+                            Un récit bouleversant qui expose les réalités du harcèlement scolaire et moral, vécu pendant l'enfance et l'adolescence. Une histoire vraie qui nous rappelle l'importance de la résilience et du combat contre l'intimidation.
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="book-details">
-            <div class="tag">Fiction prenante</div>
-            <p class="description">
-              L'auteure explore dans ce roman le thème de la génétique et plus particulièrement celui de l'identité.
-              Qu'est-ce qu'une identité ? Comment se construit-elle ? Quelles sont les conséquences d'un secret de
-              famille ?
-            </p>
-          </div>
-        </div>
-      </section>
-    </section>
+        </section>
 
-  </main>
+        <section class="showcase section" id="books">
+            <div class="adn">
+                <div class="book-title">
+                    <h1 class="title">Le test ADN: Ancêtres et damnation</h1>
+                    <div class="underline"></div>
+                </div>
+                <div class="book-container">
+                    <a href="https://www.amazon.fr/test-ADN-Anc%C3%AAtres-damnation-ebook/dp/B0BXJTHCGX/ref=sr_1_1?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&sr=8-1">
+                        <div class="book-wrapper">
+                            <div class="book">
+                                <div class="book-side book-cover">
+                                    <img src="./img/test_adn.jpg" alt="Le test ADN">
+                                </div>
+                                <div class="book-side book-spine"></div>
+                                <div class="book-side book-back"></div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="book-details">
+                        <div class="tag">Fiction prenante</div>
+                        <p class="description">
+                            L'auteure explore dans ce roman le thème de la génétique et plus particulièrement celui de l'identité. Qu'est-ce qu'une identité ? Comment se construit-elle ? Quelles sont les conséquences d'un secret de famille ?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section section" id="contact">
+            <div class="contact-container">
+                <h1 class="title">Contact</h1>
+                <div class="underline"></div>
+
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <p class="contact-text">
+                            Pour toute question concernant mes livres ou pour échanger sur mes écrits, n'hésitez pas à me contacter par email.
+                        </p>
+
+                        <div class="contact-email">
+                            <a href="mailto:chantal@avoslivres.ch">chantal@avoslivres.ch</a>
+                        </div>
+
+                        <p class="contact-social">
+                            Retrouvez-moi également sur les réseaux sociaux pour suivre mon actualité littéraire et échanger avec moi.
+                        </p>
+
+                        <div class="social-links">
+                            <a href="#" class="social-link">Facebook</a>
+                            <a href="#" class="social-link">Instagram</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Chantal Lachat - Tous droits réservés</p>
+    </footer>
+
+    <script src="/js/script.js"></script>
 </body>
 
 </html>
-
-<script src="/js/script.js"></script>
