@@ -8,7 +8,7 @@
     /* FONT SIZE (Using relative units for better scaling) */
     --font-normal: clamp(1rem, 1.2rem, 1.3rem);
     --font-nav: clamp(1.1rem, 1.3rem, 1.4rem);
-    --font-sub-title: clamp(1.6rem, 2rem, 2.2rem);
+    --font-sub-title: clamp(1.6rem, 1.8rem, 2rem);
     --font-title: clamp(2rem, 2.5rem, 3rem);
     /* COLOR */
     --background-shade-first: #F9F9F9;
@@ -166,13 +166,12 @@ nav ul li a:hover {
 */
 
 .about {
-    margin: auto;
     justify-content: flex-start;
 }
 
 .author {
-    width: 90%;
-    margin: 0 auto 0 auto;
+    width: 70%;
+    margin: 15px auto 0 auto;
     padding: 1.5rem;
     background: rgba(255, 255, 255, 1);
     border-radius: 12px;
