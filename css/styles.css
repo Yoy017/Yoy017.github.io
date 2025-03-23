@@ -103,10 +103,6 @@ canvas {
     overflow: hidden;
 }
 
-.section:first-child {
-    justify-content: start;
-}
-
 
 /*
 ----------------------------------------------------------------
@@ -170,13 +166,13 @@ nav ul li a:hover {
 */
 
 .about {
-    padding-top: 0;
-    margin-top: 0;
+    margin: auto;
+    justify-content: flex-start;
 }
 
 .author {
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto 0 auto;
     padding: 1.5rem;
     background: rgba(255, 255, 255, 1);
     border-radius: 12px;
