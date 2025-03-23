@@ -95,12 +95,10 @@ canvas {
 .section {
     scroll-snap-align: start;
     min-height: 100vh;
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: var(--section-padding) 0;
     width: 100%;
     overflow: hidden;
 }
@@ -117,12 +115,18 @@ canvas {
 */
 
 header {
+    scroll-snap-align: start;
+    /* Intègre le header dans le scroll-snapping */
     width: 100%;
     color: var(--shade-first);
     font-size: var(--font-nav);
     font-weight: bold;
     top: 0;
     background: rgba(0, 0, 0, 1);
+}
+
+.hidden-header {
+    display: none;
 }
 
 nav {
@@ -438,17 +442,9 @@ nav ul li a:hover {
     justify-content: center;
 }
 
-.social-link {
-    padding: 0.7rem 1.5rem;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 30px;
-    transition: all 0.3s ease;
-    font-size: 1rem;
-}
-
-.social-link:hover {
-    background: rgba(255, 255, 255, 0.2);
-    transform: translateY(-3px);
+.social-link svg {
+    width: 1.3rem;
+    height: 1.3rem;
 }
 
 .underline {
@@ -470,6 +466,7 @@ nav ul li a:hover {
 */
 
 footer {
+    scroll-snap-align: end;
     background: #0a0a0a;
     color: #999;
     text-align: center;
